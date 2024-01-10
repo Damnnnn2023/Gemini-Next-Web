@@ -158,7 +158,15 @@ export function SideBar(props: { className?: string }) {
           Gemini Chat Pro
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          Gemini Pro AI assistant.
+          Powered By{" "}
+          <a
+            className="text-blue-500 hover:cursor-pointer"
+            href="https://www.fre123.com?from=gemini"
+            target="_blank"
+          >
+            FRE123(👉免费资源共享平台)
+          </a>
+          .
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -216,11 +224,15 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
-              <IconButton icon={<GithubIcon />} shadow />
-            </a>
-          </div>
+        </div>
+        <div className={styles["weekly-div"]}>
+          <a
+            className={styles["weekly-a"]}
+            href="https://www.fre123.com/weekly?from=gemini"
+            target="_blank"
+          >
+            🔥技术周刊大全
+          </a>
         </div>
         <div>
           <IconButton

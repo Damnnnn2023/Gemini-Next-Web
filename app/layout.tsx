@@ -35,6 +35,15 @@ export default function RootLayout({
         <meta name="config" content={JSON.stringify(getClientConfig())} />
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
+        <script
+          async
+          src="https://umami.fre123.com/script.js"
+          data-website-id="7f5029ff-efc6-44f7-bbec-ac10bdc2a54f"
+        ></script>
+        <script
+          src="https://hm.baidu.com/hm.js?19e52b7ef5eb962c79ab929c0869336f"
+          defer
+        ></script>
       </head>
       <body>{children}</body>
     </html>
