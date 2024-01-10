@@ -4,6 +4,7 @@ import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Gemini Chat Pro - Your personal Gemini Pro Chat Bot",
@@ -44,6 +45,16 @@ export default function RootLayout({
           src="https://hm.baidu.com/hm.js?19e52b7ef5eb962c79ab929c0869336f"
           defer
         ></script>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-78D99B4H78" />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-78D99B4H78');
+          `}
+        </Script>
       </head>
       <body>{children}</body>
     </html>
