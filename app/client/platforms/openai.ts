@@ -15,7 +15,6 @@ import {
   fetchEventSource,
 } from "@fortaine/fetch-event-source";
 import { prettyObject } from "@/app/utils/format";
-import { getClientConfig } from "@/app/config/client";
 import { makeAzurePath } from "@/app/azure";
 
 export interface OpenAIListModelResponse {
@@ -34,6 +33,7 @@ export class ChatGPTApi implements LLMApi {
     const accessStore = useAccessStore.getState();
 
     const isAzure = false;
+    console.log("baseurl is ", path);
 
     if (isAzure && !accessStore.isValidAzure()) {
       throw Error(

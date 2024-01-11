@@ -9,8 +9,8 @@ export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags
 export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
 export const DEFAULT_CORS_HOST = "https://gemini-chat.pro";
-export const DEFAULT_API_HOST = `https://gemini-pro.chat/api`;
-export const OPENAI_BASE_URL = "https://gemini-pro.chat/api";
+export const DEFAULT_API_HOST = `https://gemini-pro.chat/api/openai/`;
+export const OPENAI_BASE_URL = "https://gemini-pro.chat/api/openai/";
 
 export enum Path {
   Home = "/",
@@ -76,7 +76,7 @@ export const OpenaiPath = {
 };
 
 export const Azure = {
-  ExampleEndpoint: "https://gemini-pro.chat/api",
+  ExampleEndpoint: "https://gemini-pro.chat/api/openai/",
 };
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
