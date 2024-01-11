@@ -41,11 +41,8 @@ export default function RootLayout({
           src="https://umami.fre123.com/script.js"
           data-website-id="7f5029ff-efc6-44f7-bbec-ac10bdc2a54f"
         ></script>
-        <script
-          src="https://hm.baidu.com/hm.js?19e52b7ef5eb962c79ab929c0869336f"
-          defer
-        ></script>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-78D99B4H78" />
+
+        {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-78D99B4H78" />
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -54,7 +51,7 @@ export default function RootLayout({
   
             gtag('config', 'G-78D99B4H78');
           `}
-        </Script>
+        </Script> */}
       </head>
       <body>{children}</body>
     </html>
