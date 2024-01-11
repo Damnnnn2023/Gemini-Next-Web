@@ -77,7 +77,7 @@ OpanAI 密钥，你在 openai 账户页面申请的 api key，使用英文逗号
 
 ### `BASE_URL` （可选）
 
-> Default: `https://gemini-pro.chat`
+> Default: `https://gemini-pro.chat/api/openai`
 
 > Examples: `http://your-openai-proxy.com`
 
